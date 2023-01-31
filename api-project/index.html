@@ -3,25 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <title></title>
+    <title>API PROJ</title>
   </head>
-  <section class="nav-bar">
-    <div class="btn">
-      <a class="getdef-btn" href="#getdef">Search</a>
-      <form id="form" role="search">
-        <input type="search" id="query" name="q" placeholder="Search...">
-        <button type="submit"></button>
-      </form>
-    </div>
-  </section>
-  <section class="stuff">
-    <div class="">
-      <h1 class="about-header">About Instant Definition Finder</h1>
-      <p class="about-paragraph">Have you ever just pick up a book and start reading it but then find out there's a word you don't know? Well with this online dictionary, you can find almost every </p>
-    </div>
-  </section>
   <body>
-    <script type="module" src="js/main.js"></script>
+    <section class="header">
+      <div class="heading">
+        <span class="title">Art Works</span>
+      </div>
+    </section>
+    <section class="nav-bar">
+      <a href="index.html"><img class="logo" src="http://www.ifitshipitshere.com/wp-content/uploads/2016/02/met-logo.jpg" alt="MET"></img></a>
+      <div class="nav-btns">
+        <a class="nav-btn home" href="index.html">Home</a>
+        <a class="nav-btn list" href="#artworks-list">Art Works</a>
+        <a class="nav-btn search" href="search.html">Search</a>
+      </div> 
+    </section>
+    <section class="about">
+      <div class="about-MET">
+        <div class="aboutMET-text">
+          <h1 class="about-header">About The Met</h1>
+          <p class="about-paragraph">
+            The MET is one of the largest and finest museaums in America. The museum showcases more than 5,000 years of art for everyone to discover and admire. You can browse through 789816 pieces of art here.  
+          </p>
+        </div>
+    </section>
+    <div class="list-heading" id="artworks-list">
+      <h2 class="list-header">Art Works</h2>
+      <a class="search-bar" href="search.html">Click here to search for art works...</a>
+    </div>
+    <h2 id="api-response"></h2>
+    <script type="module" src="../js/main.js"></script>
   </body>
 </html>

@@ -1,5 +1,7 @@
 import "../styles/style.css";
-const URL = "https://dictionaryapi.dev/";
+
+const objectID = x;
+const URL = "https://collectionapi.metmuseum.org/public/collection/v1/objects/" + [objectID];
 
 async function getData(URL) {
   try {
