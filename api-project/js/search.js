@@ -34,9 +34,9 @@ const listen = function () {
 
         function noResults() {
           if (articles.num_results === 0) {
-            DOMSelectors.characterUnfound.classList.remove("hidden");
+            DOMSelectors.articleUnfound.classList.remove("hidden");
           } else {
-            DOMSelectors.characterUnfound.classList.add("hidden");
+            DOMSelectors.articleUnfound.classList.add("hidden");
           }
         }
         noResults();
