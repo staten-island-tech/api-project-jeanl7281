@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api Project</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="heading">
+        <span class="title">Search for Artworks</span>
+      </div>
+    </section>
+    <section class="nav-bar">
+      <a href="index.html"><img class="logo" src="http://www.ifitshipitshere.com/wp-content/uploads/2016/02/met-logo.jpg" alt="Disney"></img></a>
+      <div class="nav-btns">
+        <a class="nav-btn home" href="index.html">Home</a>
+        <a class="nav-btn list" href="#artwork-list">Artworks</a>
+        <a class="nav-btn search" href="search.html">Search</a>
+      </div> 
+    </section>
+
+      <section class="search-page">
+        <div class="search-section">
+            <span class="search-text">Search for artworks</span>
+            <form class="search-form">
+                <input 
+                class="search-bar" 
+                type="text" 
+                placeholder="Search for the artwork name...">
+                <input class="submit-btn" type="submit">
+            </form>
+        </div>
+    </section>
+    <section class="searching-results">
+        <section class="searched-character">
+        </section>      
+    </section>
+    <section class="errors">
+        <div class="empty-input hidden">Please search by typing a artwork's name!</div>
+        <div class="character-not-found hidden">Sorry! It seems like we can't find this art piece.</div>
+    </section>
+
+    <script type="module" src="../js/search.js"></script>
+  </body>
+</html>

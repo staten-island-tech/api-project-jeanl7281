@@ -1,29 +1,29 @@
 import "../styles/style.css";
 
-const objectID = x;
-const URL = "https://collectionapi.metmuseum.org/public/collection/v1/objects/" + [objectID];
+const URL = "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=8e9bab4593cb4aa5beeca8173fc5b948";
 
 async function getData(URL) {
   try {
     const response = await fetch(URL);
-    const {} = await response.json();
-
-    function displaydef() {
-      forEach((word) => {
-        document.getElementById("api-response").insertAdjacentElement(
+    const articles = await response.json(); 
+    function displayArticles() {
+      articles.forEach((article) => {
+        document.getElementById("api-response").insertAdjacentHTML(
           "afterbegin",
-          `<div class="def-card"
-          id="${word.word}">
-          <div class="definition"
-          id=${word.definition}">
-          <div class="partOfSpeech"
-          id="${word.partOfSpeech}
-          <div class="examples" id="${word.example}"></div>
-          `
+          `<div class= "article-card" id="${article.title}">
+          <div class="article-imgBox">
+          <h3 class= "article-title">${article.title}</h3>
+                <img class="article-img" src=${article.imageUrl} alt="${article.title}"></div>
+                <div class="article-info">             
+                <h3 class="article-info">${article.author}</h3>
+                <h3 class="article-info">${article.publishedAt}</h3>
+                <h3 class="article-info">${article.content}</h3>
+                <h5 class="article-link"><a href="${articles.url}"</a></h5></div>  
+            </div>`
         );
       });
     }
-    displaydef();
+    displayArticles();
   } catch (error) {
     console.log(error);
     alert("An error occured");
