@@ -37,6 +37,7 @@
     font-size: 4rem;
     justify-content: space-evenly;
     width: 100vw;
+    background-color: transparent;
   }
   
   .nav-btn:hover {

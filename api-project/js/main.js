@@ -9,7 +9,7 @@ async function getData(URL) {
     function displayArticles() {
       articles.forEach((article) => {
         document.getElementById("api-response").insertAdjacentHTML(
-          "afterbegin",
+          "beforeend",
           `<div class= "article-card" id="${article.title}">
           <div class="article-imgBox">
           <h3 class= "article-title">${article.title}</h3>
@@ -18,7 +18,7 @@ async function getData(URL) {
                 <h3 class="article-info">${article.author}</h3>
                 <h3 class="article-info">${article.publishedAt}</h3>
                 <h3 class="article-info">${article.content}</h3>
-                <h5 class="article-link"><a href="${articles.url}"</a></h5></div>  
+                <h5 class="article-link"><a href="${article.url}"</a></h5></div>  
             </div>`
         );
       });
