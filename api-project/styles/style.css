@@ -67,7 +67,7 @@ body{
  font-size: 3.5rem;
  justify-content: center;
  align-items: center;
- border-radius: 0.5rem;
+ border-radius: 1rem;
  background-color: rgb(144, 199, 241)
 }
 
@@ -81,14 +81,14 @@ body{
   font-size: 4rem;
   margin: 1.5rem 3.5rem 1.5rem 3.5rem;
   border: solid black 0.5rem;
-  background-color: lightpink;
+  background-color: rgb(245, 144, 159);
   border-radius: 1rem;
   transition: 0.5s;
 }
 
 .filters:hover{
   transform: scale(1.2,1.2);
-  background-color: rgb(224, 138, 167);
+  background-color: rgb(240, 110, 154);
 }
 
 .name{
@@ -129,7 +129,6 @@ body{
     }
     
   }
-  
   
   @media screen and (min-width: 48.1rem) and (max-width: 76.8rem){
     #Title {
