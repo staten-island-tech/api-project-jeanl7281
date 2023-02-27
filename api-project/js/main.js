@@ -45,7 +45,7 @@ const functions = {
     data.list.forEach((character) => {
       DOMselectors.parent.insertAdjacentHTML(
         "beforeend",
-        `<div id="parent"><sub class="child" > <h2 class="name">${character.name}</h2> <img class="img" src="${character.imageUrl}" alt="Portrait Image of ${character.name} in game"> <h3 class="desc">${character.description}</h3> <a href="${character.link}" target = "_blank" rel="noopener noreferrer"><button class="stats" onClick = "confirmFunction()">Statistics</button></a></sub> </div>`
+        `<div id="parent"><sub class="child" > <h2 class="name">${character.name}</h2> <img class="img" src="${character.imageUrl}" alt="Portrait Image of ${character.name} in game"> <h3 class="desc">${character.description}</h3> <a href="${character.link}" target = "_blank" rel="r"><button class="stats" onClick = "confirmFunction()">Statistics</button></a></sub> </div>`
       );
     });
   },
