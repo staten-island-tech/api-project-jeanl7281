@@ -12,7 +12,7 @@ async function getData(brawl) {
     }
   } catch (Error) {
     console.log(Error);
-    console.log("sadge :(");
+    console.log(":/");
     document.getElementById("api-response").textContent =
       "Sorry we couldn't find the specified brawler";
   }
