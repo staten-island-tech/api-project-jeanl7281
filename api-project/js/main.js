@@ -3,6 +3,19 @@ import "./api.js";
 import { DOMselectors } from "./dom";
 import { brawl } from "./api.js";
 
+function say(name) {
+  const sayPromise = new Promise(function (resolve, reject) {
+    resolve(`hello ${name}`);
+  });
+  return sayPromise;
+}
+
+const John = say("John");
+console.log(John);
+John.then((value) => {
+  console.log(value);
+}); 
+
 const filters = {
   removeCards: function () {
     const cards = document.querySelectorAll(".child");
